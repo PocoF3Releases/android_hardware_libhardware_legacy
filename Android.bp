@@ -20,6 +20,7 @@ license {
 
 cc_library_headers {
     name: "libhardware_legacy_headers",
+    recovery_available: true,
     vendor_available: true,
     export_include_dirs: ["include"],
 
@@ -87,6 +88,7 @@ cc_test {
 // this library should be deleted
 cc_library_shared {
     name: "libhardware_legacy",
+    recovery_available: true,
     defaults: ["libpower_defaults"],
     vendor_available: true,
 
